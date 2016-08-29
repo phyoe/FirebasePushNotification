@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="xyz.phyoekhant.padc.firebasepushnotification.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_height">
+
+        <ImageView
+            android:id="@+id/iv_profile_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/drawer_background" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_overlay" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:layout_centerHorizontal="true"
+            android:text="dummy-email.com"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/text_white_ish"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_email"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_centerHorizontal="true"
+            android:text="Dummy Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/text_white_ish"
+            />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/user_profile_image_size_large"
+            android:layout_height="@dimen/user_profile_image_size_large"
+            android:src="@drawable/dummy_avatar"
+            android:scaleType="centerCrop"
+            android:layout_above="@id/tv_name"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_connect_with_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect with Facebook"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        />
+
+    <Button
+        android:id="@+id/btn_connect_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect with Google"
+        android:layout_margin="@dimen/margin_medium"
+        />
+
+</LinearLayout>
